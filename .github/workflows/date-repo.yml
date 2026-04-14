@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Print Date
         run: echo %date%
+        shell: cmd
 
       - name: Print Repository Name
         run: echo %GITHUB_REPOSITORY%
+        shell: cmd
