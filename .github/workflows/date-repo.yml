@@ -1,0 +1,15 @@
+name: Print Date and Repo Name
+
+on:
+  push
+
+jobs:
+  print-info:
+    runs-on: windows-latest
+
+    steps:
+      - name: Print Date
+        run: echo %date%
+
+      - name: Print Repository Name
+        run: echo %GITHUB_REPOSITORY%
